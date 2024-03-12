@@ -1,8 +1,11 @@
 const express = require("express");
 const app=express();
+const PORT = process.env.PORT || 3000;
+import express from "express";
+import dotenv from "dotenv";
 
 
-
+dotenv.config();
 app.get("/",(req,res)=>{
     res.send("Chat App")
 })
@@ -14,7 +17,7 @@ app.get("/",(req,res)=>{
 
 
 
-app.listen(3000, ()=> 
-console.log("Server Running on port 3000")
+app.listen(PORT, ()=> 
+console.log(`Server Running on port ${PORT}`)
 );
 
