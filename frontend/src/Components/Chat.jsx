@@ -1,5 +1,5 @@
 import React from 'react'
-import Message from './Message'
+import Messages from './Messages'
 import Input from './Input'
 
 const Chat = () => {
@@ -14,7 +14,7 @@ const Chat = () => {
           <img src={More} alt="" />
         </div>
       </div>
-      <Message/>
+      <Messages/>
       <Input/>
     </div>
   )
